@@ -1,3 +1,5 @@
+/**SETUP CODE **/
+
 .body {
     height: 100vh;
     width: 100vw;
@@ -29,3 +31,47 @@
     grid-column: 2/3;
     border: 2px solid blue;
 }
+
+/**ASIDE STYLING**/
+.aside__container {
+    display: grid;
+    height: 60%;
+    gap: 3rem;
+    grid-template-rows: 1fr 6fr;
+    border: 3px solid rgb(17, 213, 11);
+}
+
+.aside__header {
+    margin-top: 1rem;
+    border: 2px solid yellow;
+}
+
+.aside__nav {
+    border: 2px solid gray;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 3rem;
+}
+
+.aside__menu {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid royalblue;
+}
+
+.aside__item {
+    list-style: none;
+    border: 2px solid salmon;
+}
+
+.aside__branding-menu {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.aside__branding-item {
+    list-style: none;
+    border: 2px solid rebeccapurple;
+}
+
+/**HEADER STYLING**/
