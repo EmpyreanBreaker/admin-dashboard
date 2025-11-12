@@ -33,7 +33,7 @@
 }
 
 /**ASIDE STYLING**/
-.aside__container {
+.aside {
     display: grid;
     height: 60%;
     gap: 3rem;
@@ -75,7 +75,7 @@
 }
 
 /**HEADER STYLING**/
-.header__container {
+.header {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
