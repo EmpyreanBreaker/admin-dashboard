@@ -2,161 +2,172 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <title>Admin Dashboard</title>
 </head>
 
-<body class="body">
-
-    <div class="container">
+<body class="dashboard">
+    <div class="dashboard__container">
 
         <header class="header">
-            <div class="header__first-layer">
-                <input class="header__input" type="text">
+            <div class="header__top">
+                <input class="header__search" type="text" />
                 <p class="header__username">Morgan Oakley</p>
             </div>
-            <div class="header__second-layer">
-                <p class="header__welcome">Hi there</p>
+            <div class="header__bottom">
+                <p class="header__greeting">Hi there</p>
                 <p class="header__handle">Morgan Oakley (@morgan)</p>
-                <div class="header__upload-options">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                <div class="header__actions">
+                    <button class="header__action">New</button>
+                    <button class="header__action">Upload</button>
+                    <button class="header__action">Share</button>
                 </div>
             </div>
         </header>
 
-        <aside class="aside">
-
-            <h1 class="aside__header">Dashboard</h1>
-            <nav class="aside__nav">
-                <ul class="aside__menu">
-                    <li class="aside__item"><a href="#">Home</a></li>
-                    <li class="aside__item"><a href="#">Profile</a></li>
-                    <li class="aside__item"><a href="#">Messages</a></li>
-                    <li class="aside__item"><a href="#">History</a></li>
-                    <li class="aside__item"><a href="#">Tasks</a></li>
-                    <li class="aside__item"><a href="#">Communities</a></li>
+        <aside class="sidebar">
+            <h1 class="sidebar__title">Dashboard</h1>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu sidebar__menu--primary">
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Home</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Profile</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Messages</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">History</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Tasks</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Communities</a></li>
                 </ul>
 
-                <ul class="aside__branding-menu">
-                    <li class="aside__branding-item"><a href="#">Settings</a></li>
-                    <li class="aside__branding-item"><a href="#">Support</a></li>
-                    <li class="aside__branding-item"><a href="#">Privacy</a></li>
+                <ul class="sidebar__menu sidebar__menu--secondary">
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Settings</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Support</a></li>
+                    <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Privacy</a></li>
                 </ul>
             </nav>
-
         </aside>
 
-        <main class="main">
+        <main class="content">
 
-            <div class="main__projects">
-                <h2 class="main__projects-header">Your Projects</h2>
-                <div class="main__card">
-                    <p class="main__card-title">Super Cool Project</p>
-                    <p class="main__card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
+            <section class="projects">
+                <h2 class="projects__title">Your Projects</h2>
+
+                <article class="card projects__card">
+                    <p class="card__title">Super Cool Project</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
                         Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
                         duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
                         nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
                         hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
                         inceptos himenaeos.</p>
-                    <div class="main__card-icons"></div>
-                </div>
-                <div class="main__card">
-                    <p class="main__card-title">Less Cool Project</p>
-                    <p class="main__card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    <div class="card__actions"></div>
+                </article>
+
+                <article class="card projects__card">
+                    <p class="card__title">Less Cool Project</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
                         Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
                         duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
                         nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
                         hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
                         inceptos himenaeos.</p>
-                    <div class="main__card-icons"></div>
-                </div>
-                <div class="main__card">
-                    <p class="main__card-title">Impossible App</p>
-                    <p class="main__card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    <div class="card__actions"></div>
+                </article>
+
+                <article class="card projects__card">
+                    <p class="card__title">Impossible App</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
                         Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
                         duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
                         nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
                         hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
                         inceptos himenaeos.</p>
-                    <div class="main__card-icons"></div>
-                </div>
-                <div class="main__card">
-                    <p class="main__card-title">Easy Peasy App</p>
-                    <p class="main__card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    <div class="card__actions"></div>
+                </article>
+
+                <article class="card projects__card">
+                    <p class="card__title">Easy Peasy App</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
                         Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
                         duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
                         nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
                         hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
                         inceptos himenaeos.</p>
-                    <div class="main__card-icons"></div>
-                </div>
-                <div class="main__card">
-                    <p class="main__card-title">Ad Blocker</p>
-                    <p class="main__card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    <div class="card__actions"></div>
+                </article>
+
+                <article class="card projects__card">
+                    <p class="card__title">Ad Blocker</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
                         Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
                         duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
                         nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
                         hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
                         inceptos himenaeos.</p>
-                    <div class="main__card-icons"></div>
-                </div>
-                <div class="main__card">
-                    <p class="main__card-title">Money Maker</p>
-                    <p class="main__card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    <div class="card__actions"></div>
+                </article>
+
+                <article class="card projects__card">
+                    <p class="card__title">Money Maker</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit.
                         Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
                         duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
                         nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
                         hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
                         inceptos himenaeos.</p>
-                    <div class="main__card-icons"></div>
-                </div>
-            </div>
-            <div class="main__announcements">
-                <h2 class="main__announcements-header">Announcements</h2>
-                <div class="main__announcements-card">
-                    <p class="main__announcements-card-title">Site Maintenance</p>
-                    <p class="main__announcements-card-description">Lorem ipsum dolor sit amet consectetur
+                    <div class="card__actions"></div>
+                </article>
+            </section>
+
+            <section class="announcements">
+                <h2 class="announcements__title">Announcements</h2>
+
+                <article class="announcements__item">
+                    <p class="announcements__item-title">Site Maintenance</p>
+                    <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
                         adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                </div>
-                <div class="main__announcements-card">
-                    <p class="main__announcements-card-title">Community Share Day</p>
-                    <p class="main__announcements-card-description">Lorem ipsum dolor sit amet consectetur
+                </article>
+
+                <article class="announcements__item">
+                    <p class="announcements__item-title">Community Share Day</p>
+                    <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
                         adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                </div>
-                <div class="main__announcements-card">
-                    <p class="main__announcements-card-title">Updated Privacy Policy</p>
-                    <p class="main__announcements-card-description">Lorem ipsum dolor sit amet consectetur
+                </article>
+
+                <article class="announcements__item">
+                    <p class="announcements__item-title">Updated Privacy Policy</p>
+                    <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
                         adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
+                </article>
+            </section>
+
+            <section class="trending">
+                <h2 class="trending__title">Trending</h2>
+
+                <div class="trending__user">
+                    <p class="trending__handle">@tegan</p>
+                    <p class="trending__app">World Peace Builder</p>
                 </div>
-            </div>
-            <div class="main__trending">
-                <h2 class="main__trending-header">Trending</h2>
-                <div class="main__trending-user">
-                    <p class="main__trending-user-handle">@tegan</p>
-                    <p class="main__trending-app">World Peace Builder</p>
+
+                <div class="trending__user">
+                    <p class="trending__handle">@morgan</p>
+                    <p class="trending__app">Super Cool Project</p>
                 </div>
-                <div class="main__trending-user">
-                    <p class="main__trending-user-handle">@morgan</p>
-                    <p class="main__trending-app">Super Cool Project</p>
+
+                <div class="trending__user">
+                    <p class="trending__handle">@kendall</p>
+                    <p class="trending__app">Life Changing App</p>
                 </div>
-                <div class="main__trending-user">
-                    <p class="main__trending-user-handle">@kendall</p>
-                    <p class="main__trending-app">Life Changing App</p>
+
+                <div class="trending__user">
+                    <p class="trending__handle">@alex</p>
+                    <p class="trending__app">No Traffic Maker</p>
                 </div>
-                <div class="main__trending-user">
-                    <p class="main__trending-user-handle">@alex</p>
-                    <p class="main__trending-app">No Traffic Maker</p>
-                </div>
-            </div>
+            </section>
 
         </main>
     </div>
-
 </body>
 
 </html>
