@@ -81,12 +81,16 @@
 /**SIDEBAR STYLING**/
 .sidebar {
     display: grid;
- 
     grid-template-rows: 1fr 6fr 4fr;
     border: 3px solid rgb(17, 213, 11);
+    padding-left: 20px;
 }
 
 .sidebar__title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
     margin-top: 1rem;
     border: 2px solid yellow;
 }
@@ -109,7 +113,6 @@
     grid-template-rows: repeat(3, 1fr);
     border: 2px solid orchid;
 }
-
 
 .sidebar__menu-item {
     list-style: none;
