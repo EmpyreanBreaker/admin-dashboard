@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="icon-styles.css" />
+    <link rel="stylesheet" href="grid-styles.css" />
+    <link rel="stylesheet" href="reset-styles.css" />
     <title>Admin Dashboard</title>
 </head>
 
@@ -29,7 +30,8 @@
         </header>
 
         <aside class="sidebar">
-            <h1 class="sidebar__title">Dashboard</h1>
+            <h1 class="sidebar__title"><img class="sidebar__logo" src="images/sidebar-images/dashboard.svg"
+                    alt=""><span>Dashboard</span></h1>
             <nav class="sidebar__nav">
                 <ul class="sidebar__menu sidebar__menu--primary">
                     <li class="sidebar__menu-item"><a class="sidebar__link" href="#">Home</a></li>
@@ -123,47 +125,49 @@
             <section class="news">
                 <section class="announcements">
                     <h2 class="announcements__title">Announcements</h2>
+                    <div class="announcements__container">
+                        <article class="announcements__item">
+                            <p class="announcements__item-title">Site Maintenance</p>
+                            <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
+                        </article>
 
-                    <article class="announcements__item">
-                        <p class="announcements__item-title">Site Maintenance</p>
-                        <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
-                            adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                    </article>
+                        <article class="announcements__item">
+                            <p class="announcements__item-title">Community Share Day</p>
+                            <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
+                        </article>
 
-                    <article class="announcements__item">
-                        <p class="announcements__item-title">Community Share Day</p>
-                        <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
-                            adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                    </article>
-
-                    <article class="announcements__item">
-                        <p class="announcements__item-title">Updated Privacy Policy</p>
-                        <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
-                            adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                    </article>
+                        <article class="announcements__item">
+                            <p class="announcements__item-title">Updated Privacy Policy</p>
+                            <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus.</p>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="trending">
                     <h2 class="trending__title">Trending</h2>
+                    <div class="trending__container">
+                        <div class="trending__user">
+                            <p class="trending__handle">@tegan</p>
+                            <p class="trending__app">World Peace Builder</p>
+                        </div>
 
-                    <div class="trending__user">
-                        <p class="trending__handle">@tegan</p>
-                        <p class="trending__app">World Peace Builder</p>
-                    </div>
+                        <div class="trending__user">
+                            <p class="trending__handle">@morgan</p>
+                            <p class="trending__app">Super Cool Project</p>
+                        </div>
 
-                    <div class="trending__user">
-                        <p class="trending__handle">@morgan</p>
-                        <p class="trending__app">Super Cool Project</p>
-                    </div>
+                        <div class="trending__user">
+                            <p class="trending__handle">@kendall</p>
+                            <p class="trending__app">Life Changing App</p>
+                        </div>
 
-                    <div class="trending__user">
-                        <p class="trending__handle">@kendall</p>
-                        <p class="trending__app">Life Changing App</p>
-                    </div>
-
-                    <div class="trending__user">
-                        <p class="trending__handle">@alex</p>
-                        <p class="trending__app">No Traffic Maker</p>
+                        <div class="trending__user">
+                            <p class="trending__handle">@alex</p>
+                            <p class="trending__app">No Traffic Maker</p>
+                        </div>
                     </div>
                 </section>
             </section>
