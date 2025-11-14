@@ -11,8 +11,8 @@
     width: inherit;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
-    gap: 5px;
     /**Temporary**/
+    gap: 5px;
 }
 
 .header {
@@ -24,7 +24,6 @@
 .sidebar {
     grid-row: 1/3;
     grid-column: 1/2;
-    border: 2px solid red;
 }
 
 .content {
@@ -82,7 +81,6 @@
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 6fr 4fr;
-    padding-left: 20px;
 }
 
 .sidebar__title {
@@ -90,12 +88,9 @@
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
-    border: 2px solid yellow;
 }
 
 .sidebar__nav {
-    border: 8px solid gray;
     display: grid;
     grid-template-rows: 2fr 1fr;
     gap: 3rem;
@@ -104,23 +99,19 @@
 .sidebar__menu--primary {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    border: 2px solid rgb(225, 65, 65);
+    align-items: center;
 }
 
 .sidebar__menu--secondary {
     display: grid;
-    
-    border: 2px solid orchid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
 }
 
-.sidebar__link{
+.sidebar__link {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1rem;
-}
-
-.sidebar__menu-item {
-    list-style: none;
+    gap: 2rem;
 }
 
 /**CONTENT STYLING**/
