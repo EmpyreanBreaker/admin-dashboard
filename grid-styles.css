@@ -82,7 +82,6 @@
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 6fr 4fr;
-    border: 3px solid rgb(17, 213, 11);
     padding-left: 20px;
 }
 
@@ -96,7 +95,7 @@
 }
 
 .sidebar__nav {
-    border: 2px solid gray;
+    border: 8px solid gray;
     display: grid;
     grid-template-rows: 2fr 1fr;
     gap: 3rem;
@@ -105,18 +104,23 @@
 .sidebar__menu--primary {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    border: 2px solid royalblue;
+    border: 2px solid rgb(225, 65, 65);
 }
 
 .sidebar__menu--secondary {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    
     border: 2px solid orchid;
+}
+
+.sidebar__link{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
 }
 
 .sidebar__menu-item {
     list-style: none;
-    border: 2px solid salmon;
 }
 
 /**CONTENT STYLING**/
