@@ -42,39 +42,60 @@
     height: 30%;
 }
 
+
+.header__top {
+    grid-row: 1/2;
+}
+
 .header__top {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-row: 1/2;
     gap: 10rem;
     border: 2px solid yellow;
     align-items: center;
 }
 
 .header__bottom {
+    grid-row: 2/3;
+}
+
+.header__bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row: 2/3;
+    grid-template-rows: 1fr;
     border: 2px solid blue;
     align-items: center;
 }
 
-.header__greeting {
-    grid-column: 1/3;
+.header__greeting-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.header__handle {
+.header__greeting-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__greeting-logo{
     grid-column: 1/2;
-    grid-row: 2/3;
+}
+
+.header__greeting{
+    grid-column: 2/3;
+}
+
+.header__actions {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .header__actions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    grid-column: 2/3;
-    grid-row: 2/3;
 }
 
 /**SIDEBAR STYLING**/

@@ -26,6 +26,7 @@
     font-display: swap;
 }
 
+/**GENERAL**/
 .header,
 .sidebar,
 .content {
@@ -49,7 +50,7 @@
     font-weight: bold;
 }
 
-.sidebar__nav{
+.sidebar__nav {
     padding-left: 1rem;
 }
 
@@ -73,4 +74,33 @@
 
 .sidebar__menu-item {
     list-style: none;
+}
+
+/**HEADER**/
+.header {
+    /* box-shadow: 1px solid gray; */
+    background-color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.header__greeting-logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: rgba(250, 204, 21);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__greeting-logo img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+}
+
+.content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
