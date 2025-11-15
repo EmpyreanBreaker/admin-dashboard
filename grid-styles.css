@@ -55,6 +55,13 @@
     align-items: center;
 }
 
+.header__user {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
 .header__bottom {
     grid-row: 2/3;
 }
@@ -79,11 +86,11 @@
     gap: 1rem;
 }
 
-.header__greeting-logo{
+.header__greeting-logo {
     grid-column: 1/2;
 }
 
-.header__greeting{
+.header__greeting {
     grid-column: 2/3;
 }
 

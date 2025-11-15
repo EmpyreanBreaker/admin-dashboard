@@ -100,6 +100,22 @@
     display: block;
 }
 
+.header__username-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(250, 204, 21);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__username-logo img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+}
+
 .content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
