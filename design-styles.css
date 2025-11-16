@@ -27,9 +27,7 @@
 }
 
 /**GENERAL**/
-.header,
-.sidebar,
-.content input {
+* {
     font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
@@ -81,6 +79,11 @@
     font-size: 1.5rem;
 }
 
+.header__greeting>p {
+    font-size: 1.1rem;
+}
+
+
 .header__username-logo {
     width: 2.5rem;
     height: 2.5rem;
@@ -102,17 +105,13 @@
     height: 1.5rem;
 }
 
-.content {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 .header__action {
     border-radius: 1.5rem;
     border: none;
     background-color: rgba(25, 146, 212);
     color: white;
     font-weight: 500;
+    font-size: 1.1rem;
     width: 6rem;
     height: 2rem;
 }
@@ -121,6 +120,7 @@
 .sidebar {
     background-color: rgba(25, 146, 212);
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .sidebar__logo-dashboard {
@@ -163,4 +163,26 @@
 /**CONTENT**/
 .content {
     background-color: rgba(226, 232, 240);
+    padding: 1.5rem;
+}
+
+.announcements__container {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.announcements__item {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.announcements__container .announcements__item:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.announcements__item-title {
+    font-weight: 500;
+    font-size: 1.1rem;
 }

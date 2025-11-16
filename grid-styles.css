@@ -180,7 +180,6 @@
     display: grid;
     gap: 1rem;
     grid-template-rows: auto 1fr;
-    border: 2px solid darkgreen;
 }
 
 .announcements__container {
