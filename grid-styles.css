@@ -11,14 +11,11 @@
     width: inherit;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
-    /**Temporary**/
-    gap: 5px;
 }
 
 .header {
     grid-row: 1/2;
     grid-column: 2/3;
-    border: 2px solid green;
 }
 
 .sidebar {
@@ -29,7 +26,6 @@
 .content {
     grid-row: 2/3;
     grid-column: 2/3;
-    border: 2px solid blue;
 }
 
 /**HEADER STYLING**/
@@ -37,11 +33,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-
-.header__search {
-    height: 30%;
-}
-
 
 .header__top {
     grid-row: 1/2;
@@ -51,7 +42,13 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10rem;
-    border: 2px solid yellow;
+    align-items: center;
+}
+
+.header__search{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -70,7 +67,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    border: 2px solid blue;
     align-items: center;
 }
 
@@ -102,7 +98,6 @@
 .header__actions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
 }
 
 /**SIDEBAR STYLING**/
