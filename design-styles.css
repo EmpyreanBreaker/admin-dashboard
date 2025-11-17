@@ -223,3 +223,20 @@
 .trending__user-04 {
     background-color: rgba(253, 164, 175);
 }
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    border-left: 6px solid rgb(240, 180, 41);
+    padding: 1.5rem;
+}
+
+.card__actions {
+    width: 6rem;
+    height: 6rem;
+}
+
+.card__title{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
