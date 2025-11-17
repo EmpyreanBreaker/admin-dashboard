@@ -186,3 +186,40 @@
     font-weight: 500;
     font-size: 1.1rem;
 }
+
+.trending__container {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.trending__user-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending__user-logo img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+}
+
+.trending__user-01 {
+    background-color: rgba(224, 242, 254);
+}
+
+.trending__user-02 {
+    background-color: rgba(250, 204, 21);
+}
+
+.trending__user-03 {
+    background-color: rgba(163, 163, 163);
+}
+
+.trending__user-04 {
+    background-color: rgba(253, 164, 175);
+}
